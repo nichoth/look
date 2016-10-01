@@ -1,0 +1,39 @@
+{
+  "name": "look",
+  "description": "Take some files and text and put it in templates",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run watchcss & budo src/index.js:bundle.js --live --pushstate --dir public -- -t es2020 -t yo-yoify",
+    "watchcss": "node-sass --watch --source-map true src/style/style.scss -o public",
+    "test": "eslint **/*.js"
+  },
+  "dependencies": {
+    "foreach": "^2.0.5",
+    "observ": "^0.2.0",
+    "observ-struct": "^6.0.0",
+    "route-event": "^1.0.5",
+    "routes": "^2.1.0",
+    "yo-yo": "^1.3.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "budo": "^9.2.1",
+    "es2020": "^1.1.9",
+    "eslint": "^3.7.0",
+    "eslint-config-minlint": "^1.0.2",
+    "node-sass": "^3.10.1",
+    "yo-yoify": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/look.git"
+  },
+  "author": "Nick Thomas <nichoth@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/look/issues"
+  },
+  "homepage": "https://github.com/nichoth/look#readme",
+  "private": true
+}
