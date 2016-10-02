@@ -1,7 +1,5 @@
 var yo = require('yo-yo')
 var Router = require('./router')
-var tile = require('./view/tile')
-var page = require('./view/page')
 
 module.exports = function app () {
     function render (content) {
